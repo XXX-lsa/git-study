@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //判断一个整数是偶数还是奇数
+        // var num = prompt('输入一个整数');
+        // if(num % 2 == 0){
+        //     console.log('偶数')
+        // }else{
+        //     console.log('奇数')
+        // }
+
+        //判断一个年份是闰年还是平年
+        // var year = prompt('输入一个年份');
+        // if(year % 4 ==0 && year % 100 != 0 || year % 400 == 0){
+        //     console.log('闰年');
+        // }else{
+        //     console.log('平年');
+        // }
+
+        //判断一个人的年龄是否满18岁(是否成年)
+        // var age = prompt('输入年龄');
+        // if(age >= 18){
+        //     console.log('恭喜您已成年');
+        // }else if(age < 18 && age >= 0){
+        //     console.log('还未成年');
+        // }else{
+        //     console.log('别皮');
+        // }
+        
+        // 输入一个整数，如果此数为0，则输出”石头”,如果此数为1，则输出”剪刀”,如果此数为2，则输出”布”,如果为其它，则输出”错误”
+        // var num = prompt('输入一个数');
+        // if(num == 0){
+        //     console.log('石头');
+        // }else if(num == 1){
+        //     console.log('剪刀');
+        // }else if(num == 2){
+        //     console.log('布');
+        // }else{
+        //     console.log('error')
+        // }
+
+        //输入a、b两个数如果b>a则将b给a为了a一直大于等于b
+        // var a = prompt('输入a');
+        // var b = prompt('输入b');
+        // if(b > a){
+        //     a = b; 
+        // }
+        
+        // 从大到小排序a、b、c三个整数
+        // var a = prompt('输入a'),
+        //     b = prompt('输入b'),
+        //     c = prompt('输入c');
+        // if(a > b && b > c){
+        //     console.log(a + '>' + b + '>' + c);
+        // }else if(a > b && b < c){
+        //     console.log(a + '>' + c + '>' + b);
+        // }else if(c > a && a > b){
+        //     console.log(c + '>' + a + '>' + b);
+        // }else if(c > a && b > a){
+        //     console.log(c + '>' + b + '>' + a);
+        // }else if(b > a && a > c){
+        //     console.log(b + '>' + a + '>' + c);
+        // }
+        // else if(b > a && c > a){
+        //     console.log(b + '>' + c + '>' + a);
+        // }
+
+        //开发一款软件，根据公式（身高-108）*2=体重，可以有10斤左右的浮动。来观察测试者
+        // var height = prompt('输入身高(cm)');
+        // var weight = (height - 108) * 2;
+
+        //输入数字，显示星期几
+        // var num = prompt('输入数字');
+        // if(num >= 1 && num <= 7){
+        //     console.log('星期' + num);
+        // }else{
+        //     console.log(error);
+        // }
+
+        //大家都知道，男大当婚，女大当嫁。那么女方家长要嫁女儿，当然要提出一定的条件：高：180cm以上; 富:1000万以上; 帅:500以上;如果这三个条件同时满足，则:‘我一定要嫁给他’,如果三个条件有为真的情况，则:‘嫁吧，比上不足，比下有余。’如果三个条件都不满足，则:‘不嫁！’
+        // var height = prompt('你多高'),
+        //     rich = prompt('你有多少钱（万）'),
+        //     face = prompt('你有多帅（500为标准）');
+        // if(height >= 180 && rich >= 1000 && face >= 500){
+        //     console.log('我一定要嫁给他');
+        // }else if(height >= 180 || rich >= 1000 || face >= 500){
+        //     console.log('嫁吧，比上不足，比下有余');
+        // }else{
+        //     console.log('不嫁！gun');   
+        // }
+
+        //东方航空从北京飞往马尔代夫的机票原价为4000元，4到10月份为旺季， 其他月份为淡季，旺季时候头等舱打9折，经济舱打7.5折；淡季头等舱打6折， 经济舱打3折。从页面输入出行的月份和选择的舱型计算出机票价格
+        var month = prompt('输入月份'),
+            cabin = prompt('输入舱型');
+            if(month >= 4 && month <= 10){
+                if(cabin == '头等舱'){
+                    console.log(4000 * 0.9);
+                }else if(cabin == '经济舱'){
+                    console.log(4000 * 0.75);
+                }else{
+                    console('error')
+                }
+            }else if(month < 4 &&  month >=1 || month <=12 && month >10){
+                if(cabin == '头等舱'){
+                    console.log(4000 * 0.6);
+                }else if(cabin == '经济舱'){
+                    console.log(4000 * 0.3);
+                }else{
+                    console('error')
+                }
+            }else{
+                console.log('error')
+            }
+    </script>
+</body>
+</html>
